@@ -8,8 +8,8 @@
 		<title>Insert title here</title>
 	</head>
 	<body>
-		<h1>Usuário já cadastrado.</h1>
+		<h1>Erro.</h1>
+		${msg}
 		<br>
-		<a href="index.jsp">Faça o login.</a>
 	</body>
 </html>

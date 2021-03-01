@@ -22,7 +22,6 @@ public class SingletonConnection {
 			if (connection == null) {
 				connection = DriverManager.getConnection(URL, USER, PASSWORD);
 				connection.setAutoCommit(false);
-				System.out.println("Banco De Dados conectado.");
 			}
 		} catch (ClassNotFoundException | SQLException e){
 			e.printStackTrace();

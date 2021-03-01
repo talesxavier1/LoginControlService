@@ -1,14 +1,14 @@
 package curso.jsp.models;
 
-public class userModel {
+public class UserModel {
+	private long id;
 	private String email;
 	private String password;
 	private String nome;
+	private String telefone;
 	
-	public userModel(String email, String password, String nome) {
-		this.email = email;
-		this.password = password;
-		this.nome = nome;
+	public UserModel() {
+		
 	}
 	
 	public String getEmail() {
@@ -34,4 +34,33 @@ public class userModel {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+	
+	public String getTelefone() {
+		return telefone;
+	}
+
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+	
+
+	
+	public void mostrar() {
+		System.out.println("id:" + id) ;
+		System.out.println("nome:" + nome) ;
+		System.out.println("email: " + email) ;
+		System.out.println("pass: " + password) ;
+		System.out.println("------------------------------------");
+	}
+
+
+	
 }
